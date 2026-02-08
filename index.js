@@ -87,4 +87,4 @@ formElement.addEventListener('submit', function(evt) {
 	items = getTasksFromDOM();
 	saveTasks(items);
 	formElement.reset();
-})
+}) 
