@@ -24,7 +24,7 @@ function loadTasks() {
 function createItem(item) {
 	const template = document.getElementById("to-do__item-template");
 	const clone = template.content.querySelector(".to-do__item").cloneNode(true);
-  const textElement = clone.querySelector(".to-do__item-text");
+	const textElement = clone.querySelector(".to-do__item-text");
 
   const deleteButton = clone.querySelector(".to-do__item-button_type_delete");
   const duplicateButton = clone.querySelector(".to-do__item-button_type_duplicate");
@@ -78,7 +78,7 @@ items.forEach(function(text) {
 
 function saveTasks(tasks) {
 	localStorage.setItem("tasks", JSON.stringify(tasks));
-}
+} 
 
 formElement.addEventListener('submit', function(evt) {
 	evt.preventDefault();
